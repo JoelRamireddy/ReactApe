@@ -3,6 +3,9 @@ import React, {Component} from 'react';
 class Login extends Component {
     constructor(props) { 
         super(props); 
+        this.state = {
+            username: ""
+        }
     }
 
 render(){
@@ -14,7 +17,7 @@ render(){
             </label>
             <label>
                 <p>Password</p>
-                <input type="password" />
+                <input type="password" id="password"/>
             </label>
             <div>
                 <button type="submit">Submit</button>
@@ -25,7 +28,11 @@ render(){
 
     handleSubmit(event){
         event.preventDefault();
-        this.props.setLoggedIn(true);   
+        let pass = document.getElementById("password");
+        if(pass.value === "password"){
+            this.props.setLoggedIn(true); 
+        }
+          
     }
 
     handleNameChanged(event){
