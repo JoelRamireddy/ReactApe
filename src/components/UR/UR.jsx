@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-import Year from '../Year';
+import Year from '../Year.jsx';
 
 class UpperRight extends Component {
 	
