@@ -3,7 +3,7 @@ import Term from '../components/Term'
 import UR from '../components/UR/UR.js'
 import Year from '../components/Year'
 import Banner from '../components/header/Banner'
-//import Banner from './components/Banner';
+import './Ape.css'; 
 //import UpperRight from './components/UpperRight'; 
 
 class App extends Component{
@@ -23,10 +23,10 @@ class App extends Component{
        .then(response => response.json())
        .then(		
          data => this.setState({plan: this.convertPlan(data.plan), planList: 
-   data.planList, catalog: data.catalog})
+          data.planList, catalog: data.catalog})
          );
      
-                                         fetch('http://judah.cedarville.edu/~gallaghd/cs3220/ape/getRequirementsNoSession.php')
+      fetch('http://judah.cedarville.edu/~gallaghd/cs3220/ape/getRequirementsNoSession.php')
        .then(response => response.json())
        .then(			
          data => this.setState({requirements: data})
@@ -71,15 +71,88 @@ class App extends Component{
 
     render(){
       return (
-      <div className="App" id="main">
-        <Banner/>
-        {/*<BannerRight planList={this.state.planList}/> */}
-        {/*<UpperLeft requirements={this.state.requirements} catalog={this.state.catalog} /> */}
-        <UR plan={this.state.plan} catalog={this.state.catalog}/>
-        <button onClick = {this.logout.bind(this)}>Log Out </button>
-        {/*<LowerLeft /> */}
-        {/*<LowerRight catalog={this.state.catalog} /> */}
-      </div>
+        <div className="App" id="main">
+    <Banner/>
+    <div class="container border-grid">
+        <div id="UL">   
+            <h1>REQUIRED</h1>
+            <div id="Required_div">
+                <p>this is a test</p>
+            </div>
+            <h2>ELECTIVES</h2>
+            <div id="Electives_div">
+                <p>this is a test</p>
+            </div>
+            <h3>REQUIRED COGNATES</h3>
+            <div id="Cognates_div">
+                <p>this is a test</p>
+            </div>
+        </div>
+        <div class="scroll border-grid">
+            <div id="semesters">
+                <div class="card" id="fa2019">FALL 2019
+                    
+                 
+                </div>
+                <div class="card" id="sp2020">SPRING 2020
+                    
+                
+                </div>
+                <div class="card" id="sum2020">SUMMER 2020
+                    
+                    
+                </div>
+                <div class="card" id="fa2020">FALL 2020
+                    
+                  
+                </div>
+                <div class="card" id="sp2021">SPRING 2021
+                    
+                  
+                </div>
+                <div class="card" id="sum2021">SUMMER 2021
+                    
+                  
+                </div>
+                <div class="card" id="fa2021">FALL 2021
+                    
+               
+                </div>
+                <div class="card" id="sp2022">SPRING 2022
+                    
+                 
+                </div>
+                <div class="card" id="sum2022">SUMMER 2022
+                    
+                  
+                </div>
+                <div class="card" id="fa2022">FALL 2022
+                    
+                 
+                </div>
+                <div class="card" id="sp2023">SPRING 2023
+                    
+                  
+                </div>
+                <div class="card" id="sum2023">SUMMER 2023
+                    
+                   
+                </div>
+            </div>
+        </div>
+        <div class = "LL border-grid">
+
+        </div>
+        <div class = "LR border-grid">
+            <b>Course Finder</b>
+            <table id="LR_table" class="display">
+               
+            </table>
+            
+        </div>
+    </div>
+        </div>
+      
       );
     }
   

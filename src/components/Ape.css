@@ -1,0 +1,215 @@
+@import url('https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css');
+@import url('https://cdn.datatables.net/1.11.4/css/jquery.dataTables.min.css');
+
+html{
+    height: 99.7%;
+}
+body {
+    margin: 0;
+    height: 97%;
+    background-color: #F0F5F0;
+    animation: fadeInAnimation ease 2s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+
+@keyframes fadeInAnimation {
+    0%{
+        opacity: 0;
+        background-color: whitesmoke;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+/* This class controls the sizes for the main grid */
+.container {
+    font-family: 'Hind Madurai', sans-serif;
+    display: grid;
+    grid-template-columns: 22% auto;
+    grid-template-rows: 70% auto;
+    height: 93%;
+}
+
+
+.container .border-grid{
+    padding: 5px;
+    border: 1.5px inset #0000005b;
+    margin: 2px;
+    border-radius: 5px;
+}
+
+.header {
+    color: #0F2043;
+    padding-left: 5px;
+    padding-right: 5px;
+    margin: 1px;
+    margin-top: 1px;
+    border: 1.5px inset #0000005b;
+    border-radius: 7px;
+    font-size: 30px;
+    font-family: 'Righteous', cursive;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.header-buttons{
+    display: flex;
+    flex-direction: row;
+    align-items: center;  
+}
+
+.header-btn{
+    margin: 0px 3px;
+    position: relative;
+    background-color: black;
+    border-radius: 4em;
+    font-size: 12px;
+    color: white;
+    padding: 0.8em 1.8em;
+    cursor:pointer;
+    user-select:none;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+    transition-duration: 0.4s;
+    -webkit-transition-duration: 0.4s;
+    font-family: 'Righteous', cursive;
+
+}
+
+.header-btn:hover{
+    transition-duration: 0.1s;
+  background-color: #3A3A3A;
+}
+
+#UL{
+    display: flex;
+    flex-direction: column;
+    font-size: 14.5px;
+    text-align: center;
+    justify-content: flex-start;
+    font-family: 'Righteous', cursive;
+    letter-spacing: 2px;
+}
+
+#extra{
+    display: block;
+}
+
+#semesters{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(4,1fr);
+    gap: 5px;
+}
+
+.card{
+    background-color: #e8c8668c;
+    font-weight: bold;
+}
+
+.aButton{
+    padding: 5px;
+    text-decoration: none;
+    transition: ease-out 0.9s;
+    box-shadow: inset 0 0 0 0 #e8c86685;
+    color: #0F2043;
+    font-family: 'Righteous', cursive;
+}
+
+.aButton:hover{
+    box-shadow: inset 400px 0 0 0 #e8c86685;
+}
+
+.LL{
+    display: flex;
+    flex-direction: column ;
+    justify-content: space-evenly;
+    align-items: center;
+    text-align: center;
+}
+
+.scroll{
+    overflow: auto;
+}
+
+.form{
+    display: flex;
+    flex-direction: column;
+}
+
+.course{
+    background-color:#EBDDA5;
+    border: none;
+    padding: 2px;
+    width: 100%;
+    text-align: left;
+    font-family: 'Playfair Display', serif;
+    font-size: 15px;
+}
+
+.course:hover{
+    background-color: #eedb8f;
+}
+
+.LR{
+    overflow-y: scroll;
+}
+
+#table_id_wrapper{
+    border: none;
+}
+
+.course-title{
+    font-family: 'Josefin Sans', sans-serif;
+    height: 25px;
+    padding-top: 10px;
+}
+
+.course-title:hover{
+    background-color:#93969b;
+    transition-duration: 0.1s;
+}
+
+#Required_div{
+    padding-top: 1px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+#Electives_div{  
+    padding-top: 1px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+#Cognates_div{
+    padding-top: 1px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.ui-accordion .ui-accordion-header{
+    background:#1631669a;
+    color: floralwhite;
+}
+.ui-accordion .ui-widget-content{
+    background: #b8bbc0;
+}
+
+.dataTables_wrapper{
+    background: #c3c4c7;
+    text-align: center;
+}
+
+.KBB{
+    width: 45%;
+    height: 20%;
+    text-align: center;
+    background:#1631669a;
+    color:#F0F5F0;
+    font-weight: 30%;
+}

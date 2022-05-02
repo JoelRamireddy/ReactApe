@@ -19,13 +19,6 @@ class App extends Component {
             <div className="wrapper"> 
                 {this.state.isLoggedIn && <Ape setLoggedIn = {this.setLoggedIn}/>}
                 {! this.state.isLoggedIn && <Login setLoggedIn = {this.setLoggedIn} />}	
-
-                {/* <BrowserRouter> 
-                    <Routes> 
-                        <Route path="/ape" element={<Ape />}/> 
-                        <Route path="/login" element={<Login />}/> 
-                    </Routes> 
-                </BrowserRouter>  */}
             </div> 
             
         ); 
