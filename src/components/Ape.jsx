@@ -1,8 +1,8 @@
 import React, {Component} from 'react';
-import Term from '../components/Term'
-import UR from '../components/UR/UR.js'
-import Year from '../components/Year'
-import Banner from '../components/header/Banner'
+import Term from './Term.jsx'
+import UR from './UR/UR.jsx'
+import Year from './Year.jsx'
+import Banner from './header/Banner'
 //import Banner from './components/Banner';
 //import UpperRight from './components/UpperRight'; 
 

@@ -1,4 +1,4 @@
-const Term2 = (props)=>{
+const Term = (props)=>{
     const courseList = props.data;
     let courses = Object.entries(courseList).map(([key,value]) => {
         const courseName = key+ " " + props.catalog.courses[key].name;
@@ -19,4 +19,4 @@ const Term2 = (props)=>{
     );
 
 }
-export default Term2;
+export default Term;

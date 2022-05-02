@@ -1,6 +1,6 @@
 import React, {Component} from 'react';
 
-import Term from './Term2';
+import Term from './Term.jsx';
 
 class Year extends Component {
 
