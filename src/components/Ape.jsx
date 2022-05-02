@@ -3,6 +3,7 @@ import Term from './Term.jsx'
 import UR from './UR/UR.jsx'
 import Year from './Year.jsx'
 import Banner from './header/Banner'
+import './Ape.css'
 //import Banner from './components/Banner';
 //import UpperRight from './components/UpperRight'; 
 
