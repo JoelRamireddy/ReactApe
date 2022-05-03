@@ -41,7 +41,7 @@ class App extends Component {
   }
 
   componentDidMount() {
-    this.loadNewPlan();
+     this.loadNewPlan();
   }
 
   convertPlan(currPlan) {
@@ -82,7 +82,7 @@ class App extends Component {
           <UR plan={this.state.plan} catalog={this.state.catalog} />
           <div class="LL border-grid"></div>
           <div class="LR border-grid">
-            <LR />
+            <LR catalog={this.state.catalog} />
           </div>
         </div>
       </div>

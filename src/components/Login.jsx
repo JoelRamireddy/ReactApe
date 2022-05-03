@@ -1,5 +1,4 @@
 import React, { Component } from "react";
-var md5 = require("md5");
 class Login extends Component {
   constructor(props) {
     super(props);
