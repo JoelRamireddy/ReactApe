@@ -2,6 +2,8 @@ import React, { Component } from "react";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Ape from "./components/Ape";
 import Login from "./components/Login";
+const $ = require("jquery");
+$.DataTable = require("datatables.net");
 
 class App extends Component {
   constructor(props) {
@@ -10,7 +12,15 @@ class App extends Component {
       isLoggedIn: false,
     };
   }
-
+  // startUp() {
+  //   $("#data-table").DataTable({
+  //     paging: false,
+  //     dom: "lifrtp",
+  //     fixedColumns: {
+  //       heightMatch: "none",
+  //     },
+  //   });
+  // }
   render() {
     this.setLoggedIn = this.setLoggedIn.bind(this);
     return (

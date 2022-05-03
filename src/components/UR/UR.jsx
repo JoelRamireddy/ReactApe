@@ -14,8 +14,7 @@ class UpperRight extends Component {
         <div class="scroll border-grid">
           {/* YEAR component goes here */}
 
-          <div class="semesters"></div>
-          <div id="plan">{yrs}</div>
+          <div class="semesters">{yrs}</div>
         </div>
       </div>
     );
