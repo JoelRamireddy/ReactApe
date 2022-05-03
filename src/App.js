@@ -1,5 +1,4 @@
 import React, { Component } from "react";
-import "./App.css";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Ape from "./components/Ape";
 import Login from "./components/Login";
